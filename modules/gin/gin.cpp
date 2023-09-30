@@ -71,6 +71,10 @@ namespace gin
 
 }
 
+#ifdef JUCE_IOS
+    #include "utilities/gin_filesystemwatcher_ios.cpp"
+#endif
+
 #include "utilities/gin_equationparser.cpp"
 
 #if __clang__
